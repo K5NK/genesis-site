@@ -3,25 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genesis Dev</title>
+    <title>Genesis Dev Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Genesis Development Website</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Genesis</h2>
-            <p>Genesis is a powerful development framework...</p>
-        </section>
-        <section>
-            <h2>Getting Started</h2>
-            <p>Follow these steps to get started with Genesis...</p>
-        </section>
-    </main>
+    <div class="hero">
+        <h1>Welcome to the Genesis Dev Website</h1>
+        <p>Your one-stop shop for all things development.</p>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers.</p>
+        <div class="stats">
+            <div>
+                <h3>Projects:</h3>
+                <p>50+</p>
+            </div>
+            <div>
+                <h3>Active Users:</h3>
+                <p>1000+</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out our projects below.</p>
+        <div class="project-list">
+            <div class="project">
+                <h3>Discord Bot</h3>
+                <p>Learn the commands and functionality of our Discord bot.</p>
+                <button onclick="showCommands()">View Commands</button>
+            </div>
+            <div id="commands" style="display:none;">
+                <ul>
+                    <li>!help - Shows available commands</li>
+                    <li>!stats - Displays server stats</li>
+                    <li>!filter <arguments> - Filters the results based on arguments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2026 K5NK. All rights reserved.</p>
+        <p>&copy; 2026 Genesis Dev. All rights reserved.</p>
     </footer>
 </body>
 </html>
